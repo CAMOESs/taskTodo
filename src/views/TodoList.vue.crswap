@@ -1,0 +1,29 @@
+<template>
+    <div>
+        <h1>Todo</h1>
+        <form @submit.prevent='addTodo'>
+            <input v-model="todo" type="text" />
+            <ul>
+                <li v-for></li>
+            </ul>
+        </form>
+        
+    </div>
+</template>
+<script>
+    export default{
+        name: 'TodoList',
+        data () {
+            return{
+                todo:'',
+                todos:[],
+            }
+        },
+        methods: {
+            addTodo () {
+                this.todos.push(this.todo)
+                this.todo = ''
+            }
+        },
+    }
+</script>
