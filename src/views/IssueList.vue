@@ -28,7 +28,7 @@
     'Accept': 'application/vnd.github.v3+json',
     'Content-Type':'application/json',
     // 環境変数に変更
-    'Authorization': `token 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`
+    'Authorization': `token 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`
   },
 })
   
